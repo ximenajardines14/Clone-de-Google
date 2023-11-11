@@ -1,0 +1,261 @@
+body {
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - "margen" hacia adentro */
+    padding: 0;
+    /* Fuentes del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* *********************************************** */
+/* ************************************** */
+/* ***************************** */
+/* NAVEGACIÓN */
+
+header {
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    /* Justificar a la derecha */
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a {
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+/* AQUI EMPIEZA LA CLASE DEL 21 DE OCTUBRE */
+
+
+/* Ícono del menú */
+nav .nav-right-section .menu{
+    /* Agregar íconos desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    /* Para que las imágenes no se repitan */
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuarix */
+nav .nav-right-section img{
+    /* Redondeamos bordes */
+    border-radius: 100%;
+    /* Cambiar tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* *********************************************** */
+/* ************************************** */
+/* ***************************** */
+/* MAIN */
+
+main {
+    /* Agregar espacio entre header y main */
+    margin: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 90px;
+}
+main .main-input{
+    width: 530px;
+    /*Cebtrar absolutamente gracias a los margenes automaticos Vertical//horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /*ancho borde || borde estilo || borde-color*/
+    border: 1px dotted #dfe1e5; 
+    border-radius: 25px;
+    width: 525px;
+
+}
+main .main-input input{
+    height: 35px;
+    /*quitar el borde*/
+    border:none;
+    outline:none;
+    width: 450px;
+}
+main .main-input .serch-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3031/3031293.png);
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 10px;
+    padding-left: 6%;
+
+
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+    padding-left: 10px;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg) ;
+   background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10%;
+    margin-left: 10px;
+}
+
+
+    
+/* BOTONESS */
+
+main .botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+main .botones .BCG{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 10px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 10px 4px;
+    padding: 16px;
+    text-align: center;
+}
+main .botones .VATS{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 10px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 10px 4px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* ********************************** */
+/* ************************ */
+/* *************** */
+/* FOOTER */
+
+footer {
+    /* width ancho // height-alto */
+    /* El ancho de la caja abarca el 100% de la página */
+    width: 100%;
+    height: 50px;
+    /* justificar a la izquierda*/
+    /* Nos habilita usar flex-end, flex-start */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:  #f8f9fad8;
+    position: absolute;
+    padding: 10px;
+    bottom: 2%;
+}
+
+
+
+footer .footer-left{
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #70757a;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+footer .footer-left a{
+    color: #70757a;
+    /* margen del lado derecho */
+    margin-left: 12px;
+}
+
+footer .footer-right{
+    padding: 15px 30px;
+    font-size: 15px;
+    
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+footer .footer-right a{
+    color: #70757a;
+    /* margen del lado derecho */
+    margin-left: 15px;
+}
+
+footer .footer-right{
+    padding: 15px 5px;
+    width: 100%;
+    height: auto;
+    /* Eliminar los puntitos de la lista */
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    /* centrado verticalmente */
+    align-items: flex-end;
+}
+footer.footer-right a{
+    color: #70757a;
+    /* margen del lado derecho */
+    margin-right: 20px;
+}
+.main-buttons button{
+    border: none;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 2px solid #f8f9fa;
+    margin-right: 10px;
+}
+
+    
+
+
